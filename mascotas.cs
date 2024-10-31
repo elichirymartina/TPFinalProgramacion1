@@ -137,6 +137,7 @@ namespace TPFinalProgramacion
                 string especie = DGVMascotas.SelectedRows[0].Cells["Especie"].Value.ToString();
                 string responsable = DGVMascotas.SelectedRows[0].Cells["NombreCliente"].Value.ToString() + " " +
                                      DGVMascotas.SelectedRows[0].Cells["Apellido"].Value.ToString();
+                int codResponsable = Convert.ToInt32(DGVMascotas.SelectedRows[0].Cells["CodCliente"].Value);
 
                 // Crea y abre el formulario para editar la mascota
                 formulario_nueva_mascota formMascota = new formulario_nueva_mascota();
@@ -149,6 +150,7 @@ namespace TPFinalProgramacion
                 formMascota.Especie = especie;
                 formMascota.Responsable = responsable;
                 formMascota.CodMascota = codMascota;
+
 
                 CargarDatosMascota();
 

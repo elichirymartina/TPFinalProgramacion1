@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            DGVServicio = new DataGridView();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             button6 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVServicio).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // DGVServicio
             // 
-            dataGridView1.BackgroundColor = Color.FromArgb(183, 242, 235);
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.GridColor = Color.White;
-            dataGridView1.Location = new Point(69, 63);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(708, 377);
-            dataGridView1.TabIndex = 15;
+            DGVServicio.BackgroundColor = Color.FromArgb(183, 242, 235);
+            DGVServicio.BorderStyle = BorderStyle.None;
+            DGVServicio.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVServicio.GridColor = SystemColors.Desktop;
+            DGVServicio.Location = new Point(69, 63);
+            DGVServicio.Name = "DGVServicio";
+            DGVServicio.RowHeadersWidth = 62;
+            DGVServicio.Size = new Size(708, 377);
+            DGVServicio.TabIndex = 15;
+            DGVServicio.CellContentClick += DGVServicio_CellContentClick;
             // 
             // button3
             // 
@@ -124,16 +125,17 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(button6);
-            Controls.Add(dataGridView1);
+            Controls.Add(DGVServicio);
             Name = "servicios";
             Size = new Size(850, 604);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += servicios_Load;
+            ((System.ComponentModel.ISupportInitialize)DGVServicio).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView DGVServicio;
         private Button button3;
         private Button button2;
         private Button button1;

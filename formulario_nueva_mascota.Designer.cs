@@ -233,6 +233,7 @@ namespace TPFinalProgramacion
             // lblCodMascota
             // 
             lblCodMascota.AutoSize = true;
+            lblCodMascota.ForeColor = SystemColors.Control;
             lblCodMascota.Location = new Point(221, 332);
             lblCodMascota.Name = "lblCodMascota";
             lblCodMascota.Size = new Size(59, 25);
@@ -242,6 +243,7 @@ namespace TPFinalProgramacion
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = SystemColors.Control;
             label5.Location = new Point(438, 327);
             label5.Name = "label5";
             label5.Size = new Size(59, 25);

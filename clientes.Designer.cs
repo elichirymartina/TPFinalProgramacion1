@@ -32,7 +32,6 @@
             button1 = new Button();
             btnagregar_cliente = new Button();
             DGVCliente = new DataGridView();
-            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)DGVCliente).BeginInit();
             SuspendLayout();
             // 
@@ -46,7 +45,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Microsoft JhengHei UI", 10F, FontStyle.Bold);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(615, 515);
+            button2.Location = new Point(608, 515);
             button2.Name = "button2";
             button2.Size = new Size(137, 45);
             button2.TabIndex = 12;
@@ -64,7 +63,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft JhengHei UI", 10F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(268, 515);
+            button1.Location = new Point(353, 515);
             button1.Name = "button1";
             button1.Size = new Size(137, 45);
             button1.TabIndex = 11;
@@ -82,7 +81,7 @@
             btnagregar_cliente.FlatStyle = FlatStyle.Flat;
             btnagregar_cliente.Font = new Font("Microsoft JhengHei UI", 10F, FontStyle.Bold);
             btnagregar_cliente.ForeColor = Color.White;
-            btnagregar_cliente.Location = new Point(90, 515);
+            btnagregar_cliente.Location = new Point(97, 515);
             btnagregar_cliente.Name = "btnagregar_cliente";
             btnagregar_cliente.Size = new Size(137, 45);
             btnagregar_cliente.TabIndex = 10;
@@ -95,7 +94,7 @@
             DGVCliente.BackgroundColor = Color.FromArgb(183, 242, 235);
             DGVCliente.BorderStyle = BorderStyle.None;
             DGVCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVCliente.GridColor = Color.FromArgb(64, 51, 149);
+            DGVCliente.GridColor = SystemColors.Desktop;
             DGVCliente.Location = new Point(56, 52);
             DGVCliente.Name = "DGVCliente";
             DGVCliente.RowHeadersWidth = 62;
@@ -103,29 +102,10 @@
             DGVCliente.TabIndex = 9;
             DGVCliente.CellContentClick += DGVCliente_CellContentClick;
             // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(64, 51, 149);
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(27, 182, 199);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(27, 182, 199);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Microsoft JhengHei UI", 10F, FontStyle.Bold);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(440, 515);
-            button3.Name = "button3";
-            button3.Size = new Size(137, 45);
-            button3.TabIndex = 13;
-            button3.Text = "Filtrar";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
-            // 
             // clientes
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(btnagregar_cliente);
@@ -143,6 +123,5 @@
         private Button button1;
         private Button btnagregar_cliente;
         private DataGridView DGVCliente;
-        private Button button3;
     }
 }

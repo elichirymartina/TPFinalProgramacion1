@@ -28,30 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             button6 = new Button();
             DGVMascotas = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)DGVMascotas).BeginInit();
             SuspendLayout();
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(64, 51, 149);
-            button3.Cursor = Cursors.Hand;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseDownBackColor = Color.FromArgb(27, 182, 199);
-            button3.FlatAppearance.MouseOverBackColor = Color.FromArgb(27, 182, 199);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Microsoft JhengHei UI", 10F, FontStyle.Bold);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(440, 515);
-            button3.Name = "button3";
-            button3.Size = new Size(137, 45);
-            button3.TabIndex = 18;
-            button3.Text = "Filtrar";
-            button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -63,7 +45,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Microsoft JhengHei UI", 10F, FontStyle.Bold);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(611, 515);
+            button2.Location = new Point(608, 515);
             button2.Name = "button2";
             button2.Size = new Size(137, 45);
             button2.TabIndex = 17;
@@ -81,7 +63,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft JhengHei UI", 10F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(268, 515);
+            button1.Location = new Point(353, 515);
             button1.Name = "button1";
             button1.Size = new Size(137, 45);
             button1.TabIndex = 16;
@@ -99,7 +81,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Microsoft JhengHei UI", 10F, FontStyle.Bold);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(90, 515);
+            button6.Location = new Point(97, 515);
             button6.Name = "button6";
             button6.Size = new Size(137, 45);
             button6.TabIndex = 15;
@@ -112,7 +94,7 @@
             DGVMascotas.BackgroundColor = Color.FromArgb(183, 242, 235);
             DGVMascotas.BorderStyle = BorderStyle.None;
             DGVMascotas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVMascotas.GridColor = Color.White;
+            DGVMascotas.GridColor = SystemColors.Desktop;
             DGVMascotas.Location = new Point(56, 52);
             DGVMascotas.Name = "DGVMascotas";
             DGVMascotas.RowHeadersWidth = 62;
@@ -124,7 +106,6 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(button6);
@@ -137,8 +118,6 @@
         }
 
         #endregion
-
-        private Button button3;
         private Button button2;
         private Button button1;
         private Button button6;

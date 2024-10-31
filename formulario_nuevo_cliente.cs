@@ -154,7 +154,15 @@ namespace TPFinalProgramacion
                 telefono_cliente.Text = Telefono;
                 calle_cliente.Text = Calle;
                 altura_cliente.Text = Altura;
-                barrio_cliente.SelectedItem = barrio_cliente.FindStringExact(Barrio);
+                int index = barrio_cliente.FindStringExact(Barrio);
+                if (index != -1)
+                {
+                    barrio_cliente.SelectedIndex = index;
+                }
+                else
+                {
+                    barrio_cliente.SelectedIndex = 0;
+                }
             }
         }
     }

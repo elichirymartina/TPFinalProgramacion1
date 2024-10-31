@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1.X509;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,6 +30,7 @@ namespace TPFinalProgramacion
             InitializeComponent();
             CargarEspecies();
             CargarClientes();
+            CargarDatosMascota();   
         }
 
         private void CargarEspecies()
@@ -65,7 +67,7 @@ namespace TPFinalProgramacion
             }
         }
 
-        private void CargarClientes()
+        public void CargarClientes()
         {
             string connectionString = "server=localhost; port=3307; database=veterinarios; uid=root; pwd=;";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
@@ -203,14 +205,38 @@ namespace TPFinalProgramacion
 
         private void formulario_nueva_mascota_Load(object sender, EventArgs e)
         {
+
             if (ModoEdicion)
             {
+                CargarClientes();
+                CargarEspecies();
+                CargarDatosMascota();
+
                 lblCodMascota.Text = CodMascota.ToString();
                 nombre_mascota.Text = NombreMascota;
                 peso_mascota.Text = Peso.ToString();
                 edad_mascota.Text = Edad.ToString();
-                especie_mascota.SelectedItem = especie_mascota.FindStringExact(Especie);
-                responsable_mascota.SelectedItem = responsable_mascota.FindStringExact(Responsable);
+                //especie_mascota.SelectedItem = especie_mascota.FindStringExact(Especie);
+
+                int index = especie_mascota.FindStringExact(Especie);
+                if (index != -1)
+                {
+                    especie_mascota.SelectedIndex = index;
+                }
+                else
+                {
+                    especie_mascota.SelectedIndex = 0;
+                }
+
+                for (int i = 0; i < responsable_mascota.Items.Count; i++)
+                {
+                    var item = (KeyValuePair<int, string>)responsable_mascota.Items[i];
+                    if (item.Value == Responsable)
+                    {
+                        responsable_mascota.SelectedIndex = i;
+                        break;
+                    }
+                }
             }
         }
     }
