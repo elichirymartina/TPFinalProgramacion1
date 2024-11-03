@@ -20,7 +20,7 @@ namespace TPFinalProgramacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-            productos1.Visible = false;
+
             veterinarios2.Visible = false;
             clientes1.Visible = false;
             turnos1.Visible = false;
@@ -30,7 +30,7 @@ namespace TPFinalProgramacion
 
         private void btnproducto_Click(object sender, EventArgs e)
         {
-            productos1.Visible = true;
+
             veterinarios2.Visible = false;
             clientes1.Visible = false;
             turnos1.Visible = false;
@@ -41,7 +41,7 @@ namespace TPFinalProgramacion
 
         private void btnmascotas_Click(object sender, EventArgs e)
         {
-            productos1.Visible = false;
+
             veterinarios2.Visible = false;
             clientes1.Visible = false;
             turnos1.Visible = false;
@@ -51,7 +51,7 @@ namespace TPFinalProgramacion
 
         private void btnclientes_Click(object sender, EventArgs e)
         {
-            productos1.Visible = false;
+
             veterinarios2.Visible = false;
             clientes1.Visible = true;
             turnos1.Visible = false;
@@ -61,7 +61,7 @@ namespace TPFinalProgramacion
 
         private void btnturnos_Click(object sender, EventArgs e)
         {
-            productos1.Visible = false;
+
             veterinarios2.Visible = false;
             clientes1.Visible = false;
             turnos1.Visible = true;
@@ -71,7 +71,7 @@ namespace TPFinalProgramacion
 
         private void btnveterinarios_Click(object sender, EventArgs e)
         {
-            productos1.Visible = false;
+
             veterinarios2.Visible = true;
             clientes1.Visible = false;
             turnos1.Visible = false;

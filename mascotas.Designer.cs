@@ -91,7 +91,7 @@
             // 
             // DGVMascotas
             // 
-            DGVMascotas.BackgroundColor = Color.FromArgb(183, 242, 235);
+            DGVMascotas.BackgroundColor = Color.White;
             DGVMascotas.BorderStyle = BorderStyle.None;
             DGVMascotas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DGVMascotas.GridColor = SystemColors.Desktop;

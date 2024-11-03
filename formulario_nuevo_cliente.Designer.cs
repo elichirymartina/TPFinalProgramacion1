@@ -163,11 +163,11 @@ namespace TPFinalProgramacion
             // 
             lbltelefono_cliente.AutoSize = true;
             lbltelefono_cliente.Font = new Font("Microsoft JhengHei UI", 9F);
-            lbltelefono_cliente.Location = new Point(21, 182);
+            lbltelefono_cliente.Location = new Point(3, 182);
             lbltelefono_cliente.Name = "lbltelefono_cliente";
-            lbltelefono_cliente.Size = new Size(84, 23);
+            lbltelefono_cliente.Size = new Size(96, 23);
             lbltelefono_cliente.TabIndex = 5;
-            lbltelefono_cliente.Text = "Teléfono";
+            lbltelefono_cliente.Text = "Whatsapp";
             // 
             // label2
             // 

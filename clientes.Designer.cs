@@ -91,7 +91,7 @@
             // 
             // DGVCliente
             // 
-            DGVCliente.BackgroundColor = Color.FromArgb(183, 242, 235);
+            DGVCliente.BackgroundColor = Color.White;
             DGVCliente.BorderStyle = BorderStyle.None;
             DGVCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DGVCliente.GridColor = SystemColors.Desktop;

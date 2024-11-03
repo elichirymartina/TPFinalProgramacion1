@@ -36,14 +36,12 @@
             btnclientes = new Button();
             btnmascotas = new Button();
             button2 = new Button();
-            btnproducto = new Button();
             label1 = new Label();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
             fileSystemWatcher1 = new FileSystemWatcher();
             panel3 = new Panel();
             veterinarios2 = new veterinarios();
-            productos1 = new productos();
             servicios1 = new servicios();
             mascotas1 = new mascotas();
             clientes1 = new clientes();
@@ -65,7 +63,6 @@
             panel1.Controls.Add(btnclientes);
             panel1.Controls.Add(btnmascotas);
             panel1.Controls.Add(button2);
-            panel1.Controls.Add(btnproducto);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -90,7 +87,7 @@
             btnveterinarios.FlatStyle = FlatStyle.Flat;
             btnveterinarios.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold);
             btnveterinarios.ForeColor = Color.White;
-            btnveterinarios.Location = new Point(25, 568);
+            btnveterinarios.Location = new Point(25, 572);
             btnveterinarios.Name = "btnveterinarios";
             btnveterinarios.Size = new Size(219, 53);
             btnveterinarios.TabIndex = 5;
@@ -108,11 +105,11 @@
             btnturnos.FlatStyle = FlatStyle.Flat;
             btnturnos.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold);
             btnturnos.ForeColor = Color.White;
-            btnturnos.Location = new Point(25, 484);
+            btnturnos.Location = new Point(25, 460);
             btnturnos.Name = "btnturnos";
             btnturnos.Size = new Size(219, 53);
             btnturnos.TabIndex = 4;
-            btnturnos.Text = "Turnos";
+            btnturnos.Text = "Calendario";
             btnturnos.UseVisualStyleBackColor = false;
             btnturnos.Click += btnturnos_Click;
             // 
@@ -126,7 +123,7 @@
             btnclientes.FlatStyle = FlatStyle.Flat;
             btnclientes.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold);
             btnclientes.ForeColor = Color.White;
-            btnclientes.Location = new Point(25, 400);
+            btnclientes.Location = new Point(25, 349);
             btnclientes.Name = "btnclientes";
             btnclientes.Size = new Size(219, 53);
             btnclientes.TabIndex = 3;
@@ -144,7 +141,7 @@
             btnmascotas.FlatStyle = FlatStyle.Flat;
             btnmascotas.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold);
             btnmascotas.ForeColor = Color.White;
-            btnmascotas.Location = new Point(25, 316);
+            btnmascotas.Location = new Point(25, 241);
             btnmascotas.Name = "btnmascotas";
             btnmascotas.Size = new Size(219, 53);
             btnmascotas.TabIndex = 2;
@@ -162,31 +159,13 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(25, 228);
+            button2.Location = new Point(25, 132);
             button2.Name = "button2";
             button2.Size = new Size(219, 53);
             button2.TabIndex = 1;
             button2.Text = "Servicios";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            // 
-            // btnproducto
-            // 
-            btnproducto.BackColor = Color.FromArgb(64, 51, 149);
-            btnproducto.Cursor = Cursors.Hand;
-            btnproducto.FlatAppearance.BorderSize = 0;
-            btnproducto.FlatAppearance.MouseDownBackColor = Color.FromArgb(27, 182, 199);
-            btnproducto.FlatAppearance.MouseOverBackColor = Color.FromArgb(27, 182, 199);
-            btnproducto.FlatStyle = FlatStyle.Flat;
-            btnproducto.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnproducto.ForeColor = Color.White;
-            btnproducto.Location = new Point(25, 136);
-            btnproducto.Name = "btnproducto";
-            btnproducto.Size = new Size(219, 53);
-            btnproducto.TabIndex = 0;
-            btnproducto.Text = "Productos";
-            btnproducto.UseVisualStyleBackColor = false;
-            btnproducto.Click += btnproducto_Click;
             // 
             // label1
             // 
@@ -231,7 +210,6 @@
             // panel3
             // 
             panel3.Controls.Add(veterinarios2);
-            panel3.Controls.Add(productos1);
             panel3.Controls.Add(servicios1);
             panel3.Controls.Add(mascotas1);
             panel3.Controls.Add(clientes1);
@@ -249,13 +227,6 @@
             veterinarios2.Name = "veterinarios2";
             veterinarios2.Size = new Size(850, 604);
             veterinarios2.TabIndex = 9;
-            // 
-            // productos1
-            // 
-            productos1.Location = new Point(0, -3);
-            productos1.Name = "productos1";
-            productos1.Size = new Size(850, 603);
-            productos1.TabIndex = 7;
             // 
             // servicios1
             // 
@@ -320,7 +291,6 @@
         private Label label1;
         private Panel panel2;
         private PictureBox pictureBox1;
-        private Button btnproducto;
         private FileSystemWatcher fileSystemWatcher1;
         private Button btnveterinarios;
         private Button btnturnos;
@@ -332,7 +302,6 @@
         private turnos turnos1;
         private turnos turnos2;
         private veterinarios veterinarios1;
-        private productos productos1;
         private servicios servicios1;
         private mascotas mascotas1;
         private veterinarios veterinarios2;
